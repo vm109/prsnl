@@ -1,0 +1,14 @@
+1. Tuple: It is a list of items enclosed in (), and which is immutable. That is there is no append function on the tuple
+tuple1 = ("fruit1","fruit2")
+this is a tuple
+
+2. we can use "type" class to get the type of a class/
+example: print(type({1,2,3,4}))
+this will print <class set>
+
+3. what are the types of arrays in python :
+Lists : []
+Sets: {}
+Tuples: ()
+
+4. tuples are immutable, so we don't have concatenation in a tuple

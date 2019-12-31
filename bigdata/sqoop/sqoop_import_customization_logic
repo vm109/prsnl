@@ -1,0 +1,12 @@
+1. Sqoop had default 4 mappers and which we can customize using --num-mappers
+
+2. Sqoop uses the primary key for split logic if the primary key is present in the schema
+
+3. If the schema does not have primary key and if we use number of mappers more than 1 then the
+   Sqoop import will fail.
+
+4. So we can use parameter --split-by to specify a field by which we want to split the data. [If there is no primary key defined]
+  or define the number of mappers to 1 exclusively. or --auto-rest-to-one-mapper
+
+5. What happens if the non primary key used to split is non-numeric?
+    Then we have to pass an extra argument -Dorg.apache.sqoop.splitter.allow_text_splitter=true

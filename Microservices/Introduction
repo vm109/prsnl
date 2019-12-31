@@ -1,0 +1,25 @@
+1. It effects the way how we build the code and how we deploy the application in runtime.
+2. For communication between microservices we can hardcode and let one service talk to the other.
+  Or we can use SERVICE DISCOVERY for one service to talk to the other.
+3. Problems we are solving with Microservices is we are
+  a. Increasing Modularity
+  b. Allowing Scalability
+4. In a Monolith we are concerned about solving the problem of business/application
+   where as in Miocroservices above the problem of application we have the problems
+   that are generic like loadbalancing, service discovery which we need to address.
+
+5. Complexity
+  Monolith : Complexity is hidden within application
+  Microservices: complexity is between the Services
+
+6. Service Discovery is a Microservices Pattern:
+  a. Service discovery is a pattern where microservices will be discovered and communicated with
+
+7. What is a microservice and SOA?
+SOA - Service oriented architecture is where a service or business logic is exposed for reusability
+which is much like a utility where the specific use of the service may not be defined
+
+Microservice - it is a service broken from a Monolith or a Complete Application. It has clear defnition
+of what it is a what is the purpose of it.
+
+Keeping The definitions aside both of them have the same or common philosophies.

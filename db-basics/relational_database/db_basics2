@@ -1,0 +1,28 @@
+1. Codds 5th rule:
+  a. There should be sublanguages for a database.
+      1. For querying SQL
+      2. For manipulation DML
+      3. For creating tables and views and Structure for Data then we will need DDL
+      4. Also we should commit and roll back, which is called as transaction Control Language
+
+2. Seeing the tables, databases and description of tables
+  a. show databases;
+  b. show tables;
+  c. desc table_name;
+
+3. What is a online catalogue in mysql or any database?
+  a. It is data about data or the metadata.
+  b. the online catalogue is a data dictionary
+  c. we can see the tables, the user who have access over the tables, the columns using the online
+     catalogue of a database
+
+4. DDL , DML, TCL
+  a. DDL - defining the structure of the schema like creating tables, creating columns, adding column, updating a column
+    defining a view etc will come under defining DDL.
+  b. DML - data modifying language is where we can add rows, delete rows, will come under DML
+  c. TCL - transaction control language like commit and rollback will come under TCL
+
+  These are called as sub languages of a database.
+
+5. Where will the rows stored in a database?
+  All the data will go to a table_space. In table_space all the rows will be stored physically.

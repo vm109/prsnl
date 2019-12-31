@@ -1,0 +1,4 @@
+1. Why do we need to use Databases where we can store data in flat files ?
+  a. In databases the data is arranged according to algorithms like B-tree where the search will be much faster.
+  b. Also the database are designed for scalable applications where read write locks are managed for multiple reads
+    and writes

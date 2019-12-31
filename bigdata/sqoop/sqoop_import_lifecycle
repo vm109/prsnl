@@ -1,0 +1,24 @@
+Execution Life cycle of import in sqoop:
+
+1. Sqoop will read the resultset from the source database in a stream.
+
+2. Sqoop will generate code, which is hadoop map reduce code. which is used for Import
+   this code will be submitted as Jar file
+
+3. Sqoop will run a SQL command on the table to understand the schema/ structure of the data.
+
+4. Sqoop will create a POJO java object from the above SQL, like example: order_items.java
+
+5. Now generated code will be injected as Jar file into Sqoop binaries to apply the structure to incoming data
+
+6. Sqoop uses 4 parallel threads which is also called as `mappers`. It can be changed by using num-mappers
+
+7. Any data that is being imported by Sqoop, is divided among the Mappers.
+   The data which is being handled by threads/mappers are mutually exclusive. That is data handled by one
+   mapper is not handled by other thread/mapper.
+
+8. To create those mutually exclusive data sets Sqoop will execute the following SQL on the source Database to get
+  the number of records.
+  a. MIN(order_item.id) and b. Max(order_item.id)
+
+9. 

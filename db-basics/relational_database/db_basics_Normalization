@@ -1,0 +1,49 @@
+1. Normalization - It is all about defining the relation between the tables.
+  Normalization is based on the mathematical principles.
+  example : if a table has the following fields order_date, customer_name, customer_address, item_id, item_price, item_quantity
+  then we will possibly repeat the customer_name and customer_address multiple times for each item.
+
+  So, by Normalization we split the table into customer table and items table. So we reduce the redundancy.
+
+2. What are the problems that the normalization will address?
+  a. Insertion anomaly [ Say we have table employee_id, employee_name, subject In this case we may not be able to insert a record
+     because that employee may be a new hire a not yet assigned a course]
+  b. Update anomaly [If same information is present on multiple rows then while updating we might miss some rows and result
+     inconsistency]
+  c. Deletion anomaly
+
+3. We can create a logical model by using ER diagrams and the script from logical model to create physical tables or tables in
+database
+
+4. 1st Normal Form - Data should not be repeated, all the columns should have atomic data.
+
+example: venkat, netaji street, [7032017321,4567890046]
+so in the example phone two phone numbers are present in the same column which is not allowed in 1N form
+
+5. what is candidate key in dbms?
+candidate key is a field or combination of fields in a table which will uniquely identify records in a table.
+
+6. What is a functional dependency in dbms?
+If a record in database table has X and Y where X is set of attributes which form the candidate key and Y are the set of
+attributes which are non-key, then X should be able to uniquely identify the record
+
+7. 2nd Normal Form - For a table to be 2nd Normal form it has to be 1st Normal form.
+  And in the a-forth mentioned functional dependency the attributes Y should be dependent on X. [there should not be
+  any partial dependency on the candidate key] example : score_id	student_id	subject_id	marks	teacher_name [ teacher name has partial dependency on
+  subject_id where the candidate key is student_id+subject_id]
+
+  If there are any attributes in set Y such that they can identify the record then the other attributes are functionally dependent
+  on non-candidate key.
+
+8. Surrogate Key - It is a unique identifier of a record, which is typically system generated.
+
+
+9. Representation of ER diagrams,
+   fork represents many. direction will show which entity has many relation
+
+10. 3rd Normal From -
+  Should satisfy 2nd Normal form and there should not be any Transitive Dependency
+
+  Transitive Dependency - That is a non primary key attribute is dependent on another non primary key attribute
+
+11. What is BCNF - when we have candidate key then we have to take care of BCNF

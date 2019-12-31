@@ -1,0 +1,22 @@
+1. Sqoop is for transferring data between Hadoop and Relational Database.
+2. Sqoop is for Transferring data to RDBMS systems
+3. Sqoop uses map reduce to get data from Hadoop to RDBMS and vide versa
+4. Sqoop Import - Transferring data from RDBMS to Hadoop
+5. Sqoop Export - Transferring data from Hadoop to RDBMS
+6. Between Sqoop export and import flows we can have use Sprak/ Hadoop for
+processing data
+7. With the advancements in Spark we can use spark directly for the pipelines
+
+8. Getting the version of Sqoop - `sqoop version`
+9. connecting to Mysql from cli
+  - a. mysql -u retail_user -h hostname -p
+  - b. show databases
+
+10. Sqoop Commands:
+    a. Connect string for connecting to database for sqoop to export and import
+    b. sqoop --connect jdbc:mysql://ms.itversity.com/retail_db
+    c. for sqoop connect to work we need to check if the Mysql connector jar file is present
+    d. sqoop commands for connecting and listing databases and tables
+      d1. sqoop list-databases --connect jdbc:mysql://hostname -username username -P
+    e. Where as if we want to see all the tables in a given database then we will use.
+      e1. sqoop list-tables --connect jdbc:mysql://hostname/database -username username -P

@@ -1,0 +1,18 @@
+1. Hadoop file system - hdfs can be accessed using
+  hadoop fs -ls [ finding all the files in hdfs]
+
+2. hadoop configuration can be found in /etc/hadoop/conf
+
+3. Check the health of hadoop directory we can use
+hadoop fsck {folder_name}
+
+4. we can check a folder in hadoop using
+hadoop fs -ls {path to FOLDER in hadoop}
+
+hadoop fs -ls /user/venkat1992/data_import/retail_db
+
+5. hadoop file system we can see the contents in a file using `tail`
+
+hadoop fs -tail {path to FILE in haoop}
+
+  

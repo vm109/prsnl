@@ -1,0 +1,22 @@
+1. connect to sqoop
+  sqoop eval --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password} --query "{database query}"
+
+2. list databases in sqoop
+sqoop list-database --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password}
+
+3. list tables in sqoop
+sqoop list-tables --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password}
+
+
+4. sqoop read data from a table.
+sqoop eval --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password} --query "{Select query on the table}"
+
+5. Sqoop import data.
+
+sqoop import --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password} --table {table name} --target-dir {hdfs directory name}
+
+sqoop import --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password} --table {table name} --warehouse-dir {hdfs directory name}
+
+sqoop import --connect jdbc:mysql://{hostname}/{db_name} --username {username} --password {password} --table {table name} --warehouse-dir {hdfs directory name} --num-mappers {number of mappers we want}
+
+we can specify the number of mappers to divide the job to.

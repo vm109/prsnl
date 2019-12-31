@@ -1,0 +1,8 @@
+--delete-target-dir
+this parameter in the sqoop import command will delete the folder if it is already present or will ignore.
+so that it will not throw error.
+
+--append
+this will add files to the same directory.
+[Append will not overwrite but just add the new data to the old dataset. It may also include duplicate data set]
+--append and --delete-target-dir  are mutually exclusive and we cannot use both of them at the same time

@@ -1,0 +1,3 @@
+1. Go routines are very cheap. Routines are very less in size compared to threads
+2.  Threads size has to be fixed and defined. Where as routines can shrink or grow.
+3.  Critical section : Shared resources should not be accessed by multiple go routines.

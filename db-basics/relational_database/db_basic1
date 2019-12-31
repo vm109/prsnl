@@ -1,0 +1,4 @@
+1. What is a view?
+it is a virtual table or object created by a query preemptively. Where we want to query a table
+multiple times with the same query or we are joining multiple tables to get a result we can
+create a query which acts as a virtual table. 

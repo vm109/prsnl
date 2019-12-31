@@ -1,0 +1,13 @@
+1. Kafka is a publish subscribe fault tolerant system
+2. Distributed messaging - It is based on reliable messaging queue
+3. Point to Point messaging. A producer will add messages to queue. Multiple consumers can consume from queue, but
+  one message can be read or consumed by on consumer only.
+4. In pub-sub model a producer can write to queue. And a message in queue can be read by multiple consumers.
+
+
+Kafka:
+1. Kafka message is a distributed message system. It is a reliable queue
+2. Kafka queue persists messages onto disk and replicated to not lose data
+3. Kafka is built on top of zookeeper which is a synchronization service.
+4. Some quick examples of usage of Kafka -
+  a. Log aggregation of distibuted ap

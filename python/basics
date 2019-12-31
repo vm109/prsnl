@@ -1,0 +1,7 @@
+1. In python we dont have ++ or -- rather we use += or -= for increment.
+2. Strings in python are list of characters and so strings will inherit most of the list
+predefined functions
+3. we can extract substring from strings. s[lowrange: highrange]
+  highrange -> is exclusive
+4. we have validation functions in strings
+  isnum(), isalnum(), islower()

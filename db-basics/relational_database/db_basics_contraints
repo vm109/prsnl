@@ -1,0 +1,14 @@
+1. What are the constraints in a Database?
+  a. PRIMARY Key
+  b. SECONDARY KEY
+  c. CHECK constraint
+
+2. PRIMARY KEY -  when a field in the database is defined as primary key then the field will have unique values
+    and not null values.
+3. SECONDARY/ FOREIGN KEY - foreign key defines the dependency between two tables
+
+4. CHECK CONSTRAINT - check constraint will add custom checks onto tables. That is while adding age to age field
+  we can have check constraint where it will restrict adding any age less than 18
+
+5. Adding a Constraint onto a table
+  ALTER {table_name} CONSTRAINT {key name} PRIMARY KEY / FOREIGN KEY ( {field name} )

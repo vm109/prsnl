@@ -1,0 +1,12 @@
+1. Why do we need relational database and what is the advantage of non-relational database or nosql?
+Relational database -
+  1. It organizes the data by normalization.
+  2. we can chose sql when we have a clear data model at hand.
+  3. It organizes the data but it equally makes hard to denormalize data and get data from multiple tables.
+  4. sql is a good choice when we have a more structured model and we need multi-row transactions
+Nosql -
+  1. It does not need to have a rigid datamodel
+  2. All the data of a record is stored in one place. By denormalization.
+  3. scalability is done horizontally, that is adding more servers on to the database.
+  4. Nosql is for companies which needs to analyze much larger set of data.
+  5. Managing answers to very tactical questions that look across data that is  >= triple digits  petabytes is hard for relational data bases. 
